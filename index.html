@@ -1,0 +1,21 @@
+ Dubai Real Estate Event — V2
+
+## Included
+- Public one-page event website
+- RSVP form saved to PostgreSQL
+- Protected `/admin` dashboard
+- Lead list + search
+- Lead pipeline status
+- Editable headline, subheadline, WhatsApp and capacity
+- Editable property records through PostgreSQL
+- Countdown and responsive design
+
+## Run
+1. Install Node.js 20+ and PostgreSQL.
+2. Create a database and run `schema.sql`.
+3. Copy `.env.example` to `.env` and set `DATABASE_URL`, `ADMIN_USER`, and `ADMIN_PASSWORD`.
+4. Run `npm install express pg`.
+5. Run `node server.js`.
+6. Open `/` for the event page and `/admin` for the dashboard.
+
+For production, put the app behind HTTPS and use a strong admin password. The sample auth is intentionally simple for the first version.
